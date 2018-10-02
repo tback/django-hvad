@@ -4,8 +4,6 @@ python:
   - 3.5
   - 3.6
 env:
-  - DJANGO=django==1.11 DRF=3.5.3 DATABASE_URL=mysql://root@localhost/test
-  - DJANGO=django==1.11 DRF=3.5.3 DATABASE_URL=postgres://postgres@localhost/test
   - DJANGO=django==2.0.9 DRF=3.8.2 DATABASE_URL=mysql://root@localhost/test
   - DJANGO=django==2.0.9 DRF=3.8.2 DATABASE_URL=postgres://postgres@localhost/test
   - DJANGO=django==2.1.1 DRF=3.8.2 DATABASE_URL=mysql://root@localhost/test
@@ -27,15 +25,7 @@ after_success:
 
 matrix:
   exclude:
-    - python: 3.6
-      env: DJANGO=django==1.8.18 DRF=3.3.1 DATABASE_URL=mysql://root@localhost/test
-    - python: 3.6
-      env: DJANGO=django==1.8.18 DRF=3.3.1 DATABASE_URL=postgres://postgres@localhost/test
-    - python: 3.6
-      env: DJANGO=django==1.9.13 DRF=3.3.1 DATABASE_URL=mysql://root@localhost/test
-    - python: 3.6
-      env: DJANGO=django==1.9.13 DRF=3.3.1 DATABASE_URL=postgres://postgres@localhost/test
-    - python: 3.6
-      env: DJANGO=django==1.10.7 DRF=3.5.3 DATABASE_URL=mysql://root@localhost/test
-    - python: 3.6
-      env: DJANGO=django==1.10.7 DRF=3.5.3 DATABASE_URL=postgres://postgres@localhost/test
+    - python: 3.4
+      env: DJANGO=django==2.1.1 DRF=3.8.2 DATABASE_URL=mysql://root@localhost/test
+    - python: 3.4
+      env: DJANGO=django==2.1.1 DRF=3.8.2 DATABASE_URL=postgres://postgres@localhost/test
