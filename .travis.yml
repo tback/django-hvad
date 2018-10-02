@@ -1,18 +1,15 @@
 language: python
 python:
-  - 2.7
   - 3.4
   - 3.5
   - 3.6
 env:
-  - DJANGO=django==1.8.18 DRF=3.3.1 DATABASE_URL=mysql://root@localhost/test
-  - DJANGO=django==1.8.18 DRF=3.3.1 DATABASE_URL=postgres://postgres@localhost/test
-  - DJANGO=django==1.9.13 DRF=3.3.1 DATABASE_URL=mysql://root@localhost/test
-  - DJANGO=django==1.9.13 DRF=3.3.1 DATABASE_URL=postgres://postgres@localhost/test
-  - DJANGO=django==1.10.7 DRF=3.5.3 DATABASE_URL=mysql://root@localhost/test
-  - DJANGO=django==1.10.7 DRF=3.5.3 DATABASE_URL=postgres://postgres@localhost/test
   - DJANGO=django==1.11 DRF=3.5.3 DATABASE_URL=mysql://root@localhost/test
   - DJANGO=django==1.11 DRF=3.5.3 DATABASE_URL=postgres://postgres@localhost/test
+  - DJANGO=django==2.0 DRF=3.8.2 DATABASE_URL=mysql://root@localhost/test
+  - DJANGO=django==2.0 DRF=3.8.2 DATABASE_URL=postgres://postgres@localhost/test
+  - DJANGO=django==2.1 DRF=3.8.2 DATABASE_URL=mysql://root@localhost/test
+  - DJANGO=django==2.1 DRF=3.8.2 DATABASE_URL=postgres://postgres@localhost/test
 
 sudo: false
 install:
