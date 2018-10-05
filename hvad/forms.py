@@ -224,6 +224,7 @@ def translatable_modelform_factory(language, model, form=TranslatableModelForm, 
         raise TypeError('The form class given to translatable_modelform_factory '
                         'must be a subclass of hvad.forms.TranslatableModelForm. '
                         '%s is not.' % form.__name__)
+    kwargs.pop('change', None)
     klass = modelform_factory(model, form, *args, **kwargs)
     klass.language = language
     return klass

@@ -229,7 +229,7 @@ class TranslatableAdmin(ModelAdmin, TranslatableModelAdminMixin):
         
         protected = False
         deleted_objects, model_count, perms_needed, protected = get_deleted_objects(
-            [obj], translations_model._meta, request.user, self.admin_site, using)
+            [obj], request, self.admin_site)
         
         lang = get_language_info(language_code)['name_local']
 
